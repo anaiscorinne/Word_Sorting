@@ -1,5 +1,5 @@
 def array_to_sentence(string)
-	string = string.split
-	puts string.sort
+	string = string.split(/\W/)
+	return string.sort
 end
-array_to_sentence("Have a nice day.")
+puts array_to_sentence("Have a nice day.")
